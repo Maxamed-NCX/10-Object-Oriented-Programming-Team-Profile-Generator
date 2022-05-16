@@ -25,7 +25,7 @@ const addManager = () => {
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log ("Please enter the rmanager's name!");
+                    console.log ("Please enter the Manager's First Name!");
                     return false; 
                 }
             }
@@ -33,10 +33,10 @@ const addManager = () => {
         {
             type: 'input',
             name: 'id',
-            message: "Please enter the manager's ID.",
+            message: "Please enter the Manager's ID Number.",
             validate: nameInput => {
                 if  (isNaN(nameInput)) {
-                    console.log ("Please enter the manager's ID!")
+                    console.log ("Please enter the Manager's ID Number!")
                     return false; 
                 } else {
                     return true;
@@ -46,13 +46,13 @@ const addManager = () => {
         {
             type: 'input',
             name: 'email',
-            message: "Please enter the manager's email.",
+            message: "Please enter the Manager's Email.",
             validate: email => {
                 valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
                 if (valid) {
                     return true;
                 } else {
-                    console.log ('Please enter an email!')
+                    console.log ("Please enter the Manager's Email!")
                     return false; 
                 }
             }
@@ -60,10 +60,10 @@ const addManager = () => {
         {
             type: 'input',
             name: 'officeNumber',
-            message: "Please enter the manager's office number",
+            message: "Please enter the Manager's Office Number",
             validate: nameInput => {
                 if  (isNaN(nameInput)) {
-                    console.log ('Please enter an office number!')
+                    console.log ("Please enter the Manager office number!")
                     return false; 
                 } else {
                     return true;
@@ -84,7 +84,7 @@ const addManager = () => {
 const addEmployee = () => {
     console.log(`
     =================
-    Adding New Employees on Team
+    Now Adding New Employees on Team
     =================
     `);
 
@@ -92,18 +92,18 @@ const addEmployee = () => {
         {
             type: 'list',
             name: 'role',
-            message: "Please choose your employee's role",
+            message: "Please choose your Employee's Role",
             choices: ['Engineer', 'Intern']
         },
         {
             type: 'input',
             name: 'name',
-            message: "What's the name of the employee?", 
+            message: "What's the Name of the Employee?", 
             validate: nameInput => {
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log ("Please enter an employee's name!");
+                    console.log ("Please enter an Employee's First Name!");
                     return false; 
                 }
             }
@@ -111,10 +111,10 @@ const addEmployee = () => {
         {
             type: 'input',
             name: 'id',
-            message: "Please enter the employee's ID.",
+            message: "Please enter the Employee's ID Number.",
             validate: nameInput => {
                 if  (isNaN(nameInput)) {
-                    console.log ("Please enter the employee's ID!")
+                    console.log ("Please enter the Employee's ID Number!")
                     return false; 
                 } else {
                     return true;
@@ -124,13 +124,13 @@ const addEmployee = () => {
         {
             type: 'input',
             name: 'email',
-            message: "Please enter the employee's email.",
+            message: "Please enter the Employee's Email.",
             validate: email => {
                 valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
                 if (valid) {
                     return true;
                 } else {
-                    console.log ('Please enter an email!')
+                    console.log ('Please enter an Email!')
                     return false; 
                 }
             }
@@ -138,33 +138,33 @@ const addEmployee = () => {
         {
             type: 'input',
             name: 'github',
-            message: "Please enter the employee's github username.",
+            message: "Please enter the Employee's github username.",
             when: (input) => input.role === "Engineer",
             validate: nameInput => {
                 if (nameInput ) {
                     return true;
                 } else {
-                    console.log ("Please enter the employee's github username!")
+                    console.log ("Please enter the Employee's Github Username!")
                 }
             }
         },
         {
             type: 'input',
             name: 'school',
-            message: "Please enter the intern's school",
+            message: "Please enter the Intern's School Name",
             when: (input) => input.role === "Intern",
             validate: nameInput => {
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log ("Please enter the intern's school!")
+                    console.log ("Please enter the Intern's School Name!")
                 }
             }
         },
         {
             type: 'confirm',
             name: 'confirmAddEmployee',
-            message: 'Would you like to add more team members?',
+            message: 'Would you like to add more new Team Members?',
             default: false
         }
     ])
@@ -200,7 +200,7 @@ const addEmployee = () => {
 const writeFile = async (data) => {
     try {
         await writeFileAsync('./dist/index.html', data);
-        console.log('✔️  Your team profile has been successfully created! Please check out the index.html');
+        console.log('✔️  Your team profile has been successfully created and Saved to index.html');
     }   catch(err) {
         console.log(err);
     }

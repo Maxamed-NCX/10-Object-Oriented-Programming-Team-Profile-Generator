@@ -3,9 +3,9 @@ const generateManager = function (manager) {
     return `
     <div class="col-4 mt-4">
         <div class="card h-100">
-            <div class="card-header">
+            <div class="card-header p-3 mb-2 bg-danger text-white">
                 <h3>${manager.name}</h3>
-                <h4>Manager</h4><i class="material-icons">content_paste</i>
+                <h4>Manager</h4><i class='fa-solid fa-mug-saucer'></i>
             </div>
 
             <div class="card-body">
@@ -24,9 +24,9 @@ const generateEngineer = function (engineer) {
     return `
     <div class="col-4 mt-4">
         <div class="card h-100">
-            <div class="card-header">
+            <div class="card-header p-3 mb-2 bg-danger text-white">
                 <h3>${engineer.name}</h3>
-                <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
+                <h4>Engineer</h4><i class='fa fa-cogs'></i>
             </div>
 
             <div class="card-body">
@@ -45,9 +45,9 @@ const generateIntern = function (intern) {
     return `
     <div class="col-4 mt-4">
         <div class="card h-100">
-            <div class="card-header">
+            <div class="card-header p-3 mb-2 bg-danger text-white">
                 <h3>${intern.name}</h3>
-                <h4>Intern</h4><i class="material-icons">assignment_ind</i>
+                <h4>Intern</h4><i class='fas fa-school'></i>
             </div>
 
             <div class="card-body">
@@ -98,13 +98,13 @@ generateHTML = (data) => {
     const employeeBlocks = pageArray.join('')
 
     // return to generated page
-    const generateTeam = generateTeamPage(employeeBlocks); 
-    return generateTeam;
+    const createTeam = createTeamPage(employeeBlocks); 
+    return createTeam;
 
 }
 
 // generate html page 
-const generateTeamPage = function (employeeBlocks) {   
+const createTeamPage = function (employeeBlocks) {   
   return`
   <!DOCTYPE html>
   <html lang="en">
@@ -119,9 +119,9 @@ const generateTeamPage = function (employeeBlocks) {
       <link rel="stylesheet" href="style.css">
   </head>
   <body>
-      <header>
+      <header p-3 mb-2 bg-danger text-white>
           <nav class="navbar" id="navbar">
-              <span class="navbar-brand mb-0 h1 w-100 text-center" id="navbar-text">Team Profile</span>
+              <span class="navbar-brand mb-0 h1 w-100 text-center text-primary" id="navbar-text">Team Profile</span>
           </nav>
       </header>
       <main>
