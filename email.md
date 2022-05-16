@@ -21,3 +21,23 @@ Again, the sub-expression \w+([.-]?\w+)\* is used to match the email domain name
 The sub-expression .\w{2,3} matches a . followed by two or three word characters, e.g., ".com", ".edu", ".us", ".uk", ".co".
 
 (.\w{2,3})+ specifies that the above sub-expression shall occur one or more times, e.g., ".com", ".co.uk", ".edu.sg" etc.
+
+#include <iostream>
+using namespace std;
+
+string str = "this is public string\n";
+
+string foo() {
+return str;
+}
+
+int main()
+{
+foo() = "test"; // what does this line do
+cout << str << endl;
+
+    char c;
+    cin>>c;
+    return 0;
+
+}
