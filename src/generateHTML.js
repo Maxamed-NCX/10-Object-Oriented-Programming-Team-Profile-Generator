@@ -1,4 +1,4 @@
-// create Manager card
+// create Manager block
 const generateManager = function (manager) {
     return `
     <div class="col-4 mt-4">
@@ -19,7 +19,7 @@ const generateManager = function (manager) {
     `;
 }
 
-// create Engineer card
+// create Engineer block
 const generateEngineer = function (engineer) {
     return `
     <div class="col-4 mt-4">
@@ -40,7 +40,7 @@ const generateEngineer = function (engineer) {
     `
 }
 
-// create Intern card 
+// create Intern block 
 const generateIntern = function (intern) {
     return `
     <div class="col-4 mt-4">
@@ -63,7 +63,7 @@ const generateIntern = function (intern) {
 // push array to page 
 generateHTML = (data) => {
 
-    // array for cards 
+    // array for blocks 
     pageArray = []; 
 
     for (let i = 0; i < data.length; i++) {
@@ -73,38 +73,38 @@ generateHTML = (data) => {
 
         // call manager function
         if (role === 'Manager') {
-            const managerCard = generateManager(employee);
+            const managerBlock = generateManager(employee);
 
-            pageArray.push(managerCard);
+            pageArray.push(managerBlock);
         }
 
         // call engineer function
         if (role === 'Engineer') {
-            const engineerCard = generateEngineer(employee);
+            const engineerBlock = generateEngineer(employee);
 
-            pageArray.push(engineerCard);
+            pageArray.push(engineerBlock);
         }
 
         // call intern function 
         if (role === 'Intern') {
-            const internCard = generateIntern(employee);
+            const internBlock = generateIntern(employee);
 
-            pageArray.push(internCard);
+            pageArray.push(internBlock);
         }
         
     }
 
     // joining strings 
-    const employeeCards = pageArray.join('')
+    const employeeBlocks = pageArray.join('')
 
     // return to generated page
-    const generateTeam = generateTeamPage(employeeCards); 
+    const generateTeam = generateTeamPage(employeeBlocks); 
     return generateTeam;
 
 }
 
 // generate html page 
-const generateTeamPage = function (employeeCards) {   
+const generateTeamPage = function (employeeBlocks) {   
   return`
   <!DOCTYPE html>
   <html lang="en">
@@ -127,8 +127,8 @@ const generateTeamPage = function (employeeCards) {
       <main>
           <div class="container">
               <div class="row justify-content-center" id="team-cards">
-                  <!--Team Cards-->
-                  ${employeeCards}
+                  <!--Team Blocks-->
+                  ${employeeBlocks}
               </div>
           </div>
       </main>
