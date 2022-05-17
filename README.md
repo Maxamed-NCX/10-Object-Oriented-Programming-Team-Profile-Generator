@@ -17,6 +17,9 @@
 ℹ️  <br>
 Helps to create an HTML profile page for your whole developer team by answering questions on the command line. Starting from the Manager, Employees and any external non-employees. Allows for Name, titles, email and ID numbers to be posted on roster.
 
+Sample Team Profile:
+https://mcnoor.github.io/Challenge-Module10-BC/
+
 ## Table of Contents
 
 - [Description](#description)
