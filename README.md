@@ -36,10 +36,10 @@ https://mcnoor.github.io/Challenge-Module10-BC/
 
 Steps to install application:
 
-Clone or Download repository.
-Using server.js run npm install
-Start node server and answer prompts
-then HTML profile will be generated!
+Clone or Download repository. <br>
+Using server.js run npm install <br>
+Start node server and answer prompts <br>
+then HTML profile will be generated! <br>
 
 ## Usage
 
