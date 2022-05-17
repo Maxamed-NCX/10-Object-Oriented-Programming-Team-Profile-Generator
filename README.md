@@ -1,4 +1,4 @@
-<h1 align="center">Team-Profile-Generator 👋</h1>
+<h1 align="center">👋 Team-Profile-Generator 👋</h1>
   
 </br>
 <p align="center">
@@ -68,7 +68,7 @@ This application is covered by the MIT license.
 
 ❓❓❓ Contact me<br />
 <br />
-:octocat: Find me on GitHub: [mcnoor](https://github.com/mcnoor)<br />
+:octocat: Find me on GitHub: [mcnoor](https://github.com/Mcnoor/Challenge-Module10-BC)<br />
 <br />
 ✉️ Email me with any questions: mcnoor@gmail.com<br /><br />
 
