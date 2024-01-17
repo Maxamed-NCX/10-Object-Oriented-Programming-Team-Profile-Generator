@@ -1,4 +1,4 @@
-<h1 align="center">👋 Team-Profile-Generator 👋</h1>
+<h1 align="center">👋Team-Profile-Generator👋</h1>
   
 </br>
 <p align="center">
