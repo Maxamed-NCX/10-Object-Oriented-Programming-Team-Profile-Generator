@@ -1,5 +1,4 @@
 <h1 align="center">👋Team-Profile-Generator👋</h1>
-  BootCamp-Object-Oriented-Programming-Challenge-Team-Profile-Generator
 
 </br>
 <p align="center">
@@ -10,8 +9,10 @@
     <img src="https://img.shields.io/github/package-json/dependency-version/Mcnoor/Challenge-Module10-BC/inquirer?style=for-the-badge" alt="Inquirer Version" />
   <br>
     <img src="https://img.shields.io/badge/license-MIT-brightgreen" />
-    
 </p>
+
+## UofM BootCamp: Application 10
+BootCamp Object Oriented Programming Challenge Team Profile Generator
 
 ## Description
 
